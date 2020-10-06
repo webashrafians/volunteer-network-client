@@ -40,6 +40,8 @@ const Home = () => {
           <Button>Search</Button>
         </div>
       </div>
+
+    <div className="container">
       <div className='row eventRow'>
         {Fields.map(category => (
           <VolunteerCategory
@@ -49,6 +51,8 @@ const Home = () => {
           />
         ))}
       </div>
+      </div>
+
     </div>
   );
 };

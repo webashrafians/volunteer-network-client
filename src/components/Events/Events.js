@@ -4,14 +4,14 @@ import Event from "../Event/Event";
 import Header from "../Header/Header";
 
 const Events = () => {
-  const { LoggedInUser, SetLoggedInUser } = useContext(UserContext);
-  const [eventFields, SetEventFields] = useState([]);
+  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const [eventFields, setEventFields] = useState([]);
   useEffect(() => {
     fetch(
-      `https://frozen-escarpment-01034.herokuapp.com/getEvents?email=${LoggedInUser.email}`
+      `https://frozen-escarpment-01034.herokuapp.com/getEvents?email=${loggedInUser.email}`
     )
       .then(res => res.json())
-      .then(events => SetEventFields(events));
+      .then(events => setEventFields(events));
   }, []);
 
   // cancel event from the database and ui ..........
@@ -26,7 +26,7 @@ const Events = () => {
       })
       .then(data => {
         console.log("Event Delete Successfully");
-        SetEventFields(remainingEvents);
+        setEventFields(remainingEvents);
       });
   };
   return (
