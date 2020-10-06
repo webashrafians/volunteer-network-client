@@ -9,7 +9,7 @@
   background: linear-gradient(
       0deg,
       rgb(155, 155, 155, 0.75),
-      rgb(0, 0, 0, 0.75)
+      rgb(0, 0, 255, 0.75)
     ),
     url("../../images/logos/back.png");
   background-size: cover;

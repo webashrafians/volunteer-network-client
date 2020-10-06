@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../../App";
 import logo from "../../images/logos/Group 1329.png";
 import "./Header.css";
+
 const Header = () => {
-  const { LoggedInUser, SetLoggedInUser } = useContext(UserContext);
+  const { LoggedInUser, setLoggedInUser } = useContext(UserContext);
   return (
     <Navbar expand='lg'>
       <Navbar.Brand>
