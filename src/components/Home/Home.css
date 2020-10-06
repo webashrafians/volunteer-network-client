@@ -8,8 +8,8 @@
 .upperSide {
   background: linear-gradient(
       0deg,
-      rgb(248, 250, 252, 0.9),
-      rgb(248, 250, 252, 0.9)
+      rgb(155, 155, 155, 0.75),
+      rgb(0, 0, 0, 0.75)
     ),
     url("../../images/logos/back.png");
   background-size: cover;
